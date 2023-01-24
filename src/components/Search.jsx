@@ -29,16 +29,33 @@ function Search() {
         return error;
     }
 
+        //id padding
+    function padNumber(num, size) {
+        let paddedNum = num.toString();
+        while (paddedNum.length < size) {
+          paddedNum = "0" + paddedNum;
+        }
+        return paddedNum;
+      }
+        // Firts letter to upper case
+    function capitalizeFirstLetter(string) {
+        return `${string[0].toUpperCase()}${string.slice(1)}`;
+      }
+
+
   return (
     <div className='mainContainer'>
-        
+        <div className='results'>
         {/* Conditional title */}
-        <h3 className='title'>{data ? data.name : "Pokedex" }</h3>
+        <h3 className='id'>{data ? "#" : ""}{data ? padNumber(data.id, 3) : "#000" }</h3>
+        <h3 className='title'>{data ? capitalizeFirstLetter(data.name) : "Pokedex" }</h3>
 
         <Images data={ data } />
         
         <AditionalInfo data={ data } />
+        </div>
         
+        <div className='form'>
         <Formik
         initialValues={{
             pokemonName: ''
@@ -47,7 +64,9 @@ function Search() {
         validate = { validations }
         >
             <Form className='searchForm'>
-                <Field className='textField' name='pokemonName' type='text'/>
+                <Field className='formField' name='pokemonName' type='text' placeholder="Search by name"/>
+                <br/>
+                <Field className='formField' name='pokemonId' type='number' placeholder="Search by id"/>
                 <br/>
                 <button className='submitButton' type='submit' >Search</button>
                 <div className="break"></div>
@@ -56,7 +75,8 @@ function Search() {
                 </div>
             </Form>
         </Formik>
-        
+            
+        </div>
     </div>
   )
 }

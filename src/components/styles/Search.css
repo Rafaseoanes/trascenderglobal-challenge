@@ -2,11 +2,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-wrap: wrap;
     padding: 50px;
 }
 .title{
+    font-size: xx-large;
+    font-weight: 800;
+    color: white;
     margin-bottom: 50px;
+}
+.id{
+    font-weight: 800;
+    color: white;
+    margin-bottom: 0px;
 }
 AditionalInfo{
     margin: 40px 0px;
@@ -29,5 +37,45 @@ AditionalInfo{
    .submitButton:active {
    background: rgb(13, 112, 211);
    }
+   .results{
+    width: 100%;
+    
+    }
+   .form{
+    width: 100%;
+    text-align: center;
+    
+    }
 
+    .formField {
+        font-weight: 500;
+        font-size: 14px;
+        height: 40px;
+        width: 22em;
+        border-radius: 7px;
+        padding-left: 10px;
+        border: none;
+        border-bottom: 1px solid #e5e5e5;
+        outline: none;
+        margin-bottom: 20px;
+      }
+      
+      .formField:focus {
+        border-bottom: 1px solid #6941c6;
+        -webkit-transition: 0.1s;
+        -webkit-transition: 0.5s;
+        transition: 0.5s;
+      }
 
+@media (min-width: 900px) {
+    .results{
+        width: 50%;
+        margin-left: auto;
+    }
+    .form{
+        width: 50%;
+        text-align: center;
+        margin-right: auto;
+    }
+    
+}

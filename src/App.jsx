@@ -3,7 +3,7 @@ import Search from "./components/Search";
 
 const App = () => {
   return (
-    <div style={{backgroundColor: "rgb(91, 162, 182)", height: "110vh"}}>
+    <div style={{backgroundColor: "rgb(91, 162, 182)"}}>
       <Search />
     </div>
   );
