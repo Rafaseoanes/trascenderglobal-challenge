@@ -1,22 +1,30 @@
-.mainContainer{
+.mainContainer {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     padding: 50px;
+    -webkit-transition: all 0.5s 0s ease;
+    -moz-transition: all 0.5s 0s ease;
+    -o-transition: all 0.5s 0s ease;
+    transition: all 0.5s 0s ease;
+
 }
-.title{
+
+.title {
     font-size: xx-large;
     font-weight: 800;
     color: white;
     margin-bottom: 50px;
 }
-.id{
+
+.id {
     font-weight: 800;
     color: white;
     margin-bottom: 0px;
 }
-AditionalInfo{
+
+AditionalInfo {
     margin: 40px 0px;
 }
 
@@ -27,55 +35,63 @@ AditionalInfo{
     background: dodgerblue;
     color: white;
     border-radius: 4px;
-   }
-   
-   .submitButton:hover {
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(30,144,255,1) 0%, rgb(14, 129, 245) 100%);
-   }
-   
-   .submitButton:active {
-   background: rgb(13, 112, 211);
-   }
-   .results{
+}
+
+.submitButton:hover {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(30, 144, 255, 1) 0%, rgb(14, 129, 245) 100%);
+}
+
+.submitButton:active {
+    background: rgb(13, 112, 211);
+}
+
+.results {
     width: 100%;
-    
-    }
-   .form{
+
+}
+
+.form {
     width: 100%;
     text-align: center;
-    
-    }
 
-    .formField {
-        font-weight: 500;
-        font-size: 14px;
-        height: 40px;
-        width: 22em;
-        border-radius: 7px;
-        padding-left: 10px;
-        border: none;
-        border-bottom: 1px solid #e5e5e5;
-        outline: none;
-        margin-bottom: 20px;
-      }
-      
-      .formField:focus {
-        border-bottom: 1px solid #6941c6;
-        -webkit-transition: 0.1s;
-        -webkit-transition: 0.5s;
-        transition: 0.5s;
-      }
+}
+
+.formField {
+    font-weight: 500;
+    font-size: 14px;
+    height: 40px;
+    width: 22em;
+    border-radius: 7px;
+    padding-left: 10px;
+    border: none;
+    border-bottom: 1px solid #e5e5e5;
+    outline: none;
+    margin-bottom: 20px;
+}
+
+.formField:focus {
+    border-bottom: 1px solid #6941c6;
+    -webkit-transition: 0.1s;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.errorMessage {
+    color: white;
+    padding: 10px;
+}
 
 @media (min-width: 900px) {
-    .results{
+    .results {
         width: 50%;
         margin-left: auto;
     }
-    .form{
+
+    .form {
         width: 50%;
         text-align: center;
         margin-right: auto;
     }
-    
+
 }
