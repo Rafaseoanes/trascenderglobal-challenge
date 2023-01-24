@@ -1,10 +1,10 @@
 import React from 'react'
+import "./styles/Images.css"
 
 function Images(props) {
   return (
-    <div>
-        
-        <img src={props.data.sprites.other['official-artwork'].front_default} alt={props.data.name} />
+    <div className='imageContainer'>
+        <img src={props.data ? props.data.sprites.other['official-artwork'].front_default : "https://i.imgur.com/OBsRAeI.png"} alt={props.data?.name} />
     </div>
   )
 }

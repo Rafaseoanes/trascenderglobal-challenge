@@ -34,7 +34,7 @@ function Search() {
         <h3>{data ? data.name : "Pokedex" }</h3>
 
         {/* Conditional image component */}
-        {data ? <Images data={ data } /> : null }
+        <Images data={ data } />
         
         <AditionalInfo data={ data } />
         
