@@ -2,7 +2,7 @@
 .imageContainer{
     height: 300px;
     width: 300px;
-    background-color: tomato;
+    background-color: rgba(255, 255, 255, 0.8);
     border-radius: 100%;
     display: flex;
     align-items: center;

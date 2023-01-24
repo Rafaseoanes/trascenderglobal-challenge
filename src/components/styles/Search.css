@@ -11,3 +11,23 @@
 AditionalInfo{
     margin: 40px 0px;
 }
+
+.submitButton {
+    font-size: 17px;
+    padding: 0.5em 2em;
+    border: transparent;
+    background: dodgerblue;
+    color: white;
+    border-radius: 4px;
+   }
+   
+   .submitButton:hover {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(30,144,255,1) 0%, rgb(14, 129, 245) 100%);
+   }
+   
+   .submitButton:active {
+   background: rgb(13, 112, 211);
+   }
+
+

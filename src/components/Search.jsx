@@ -48,6 +48,7 @@ function Search() {
         >
             <Form className='searchForm'>
                 <Field className='textField' name='pokemonName' type='text'/>
+                <br/>
                 <button className='submitButton' type='submit' >Search</button>
                 <div className="break"></div>
                 <div className='errorMessage'>
