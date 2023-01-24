@@ -1,9 +1,10 @@
 import React from "react";
+import Search from "./components/Search";
 
 const App = () => {
   return (
-    <div>
-      <p>Your cleaned App component</p>
+    <div style={{backgroundColor: "#f3f3f3"}}>
+      <Search />
     </div>
   );
 };
