@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import Images from './Images'
 import AditionalInfo from './AditionalInfo'
 import { Formik, Form, Field, ErrorMessage } from 'formik'
+import './styles/Search.css'
 
 
 function Search() {
@@ -29,11 +30,11 @@ function Search() {
     }
 
   return (
-    <div>
+    <div className='mainContainer'>
+        
         {/* Conditional title */}
-        <h3>{data ? data.name : "Pokedex" }</h3>
+        <h3 className='title'>{data ? data.name : "Pokedex" }</h3>
 
-        {/* Conditional image component */}
         <Images data={ data } />
         
         <AditionalInfo data={ data } />

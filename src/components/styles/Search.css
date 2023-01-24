@@ -1,0 +1,13 @@
+.mainContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px;
+}
+.title{
+    margin-bottom: 50px;
+}
+AditionalInfo{
+    margin: 40px 0px;
+}
