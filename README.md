@@ -13,7 +13,7 @@ In the project directory run:
 
 - Run `npm install` in the terminal to install dependencies
 - Run `npm start` in the terminal
-- Open [http://localhost:3000](http://localhost:3000) to view the app in your browser.
+- Open [http://localhost:3000](http://localhost:3000) in your browser to view the app.
 
 #### This will start the Frontend part of the app, where you will be able to find a pokémon by its name or id, you can only search by one field at a time.
 
