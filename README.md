@@ -20,7 +20,7 @@ In the project directory run:
 ### Step 2 - Start the Backend `npm start`
 
  - Open a new terminal in the same directory.
- - Type: `cd server`
+ - Type: `cd server`, and press enter
  - Run `npm install` in the terminal to install dependencies
  - Then run `npm start`
 
