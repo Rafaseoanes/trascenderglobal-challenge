@@ -2,7 +2,7 @@
 
 This project is a coding challenge made for the frontend developer position at Trascender Global.
 
-<img src="https://i.imgur.com/ln3VXat.jpeg" alt="Pokédex" width="600"/>
+<img src="https://i.imgur.com/N2r3RfP.jpeg" alt="Pokédex" width="600"/>
 
 
 ## How to run this app:
