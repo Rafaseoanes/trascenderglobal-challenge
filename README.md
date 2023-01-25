@@ -12,6 +12,7 @@ In the project directory run:
 ### Step 1 - Start the Fronted `npm start`
 
 Run `npm install` in the terminal to install dependencies
+
 Run `npm start` in the terminal
 
 Open [http://localhost:3000](http://localhost:3000) to view the app in your browser.
