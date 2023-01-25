@@ -2,6 +2,8 @@
 
 This project is a coding challenge made for the frontend developer position at Trascender Global.
 
+![This is an image](https://i.imgur.com/rLvzBjC.jpeg)
+
 
 ## How to run this app:
 
@@ -13,7 +15,7 @@ Run `npm start` in the terminal
 
 Open [http://localhost:3000](http://localhost:3000) to view the app in your browser.
 
-#### This will start the Frontend part of the app, where you will be able to find a pokémon by its name or id, the app will priorize searching by name.
+#### This will start the Frontend part of the app, where you will be able to find a pokémon by its name or id, you can only search by one field at a time.
 
 ### Step 2 - Start the Backend `npm start`
 
