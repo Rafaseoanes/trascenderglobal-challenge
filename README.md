@@ -7,14 +7,18 @@ This project is a coding challenge made for the frontend developer position at T
 
 In the project directory run:
 
-### `npm start`
+### Step 1 - Start the Fronted `npm start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 This will start the Frontend part of the app, where you will be able to find a pokémon by its name or id, the app will priorize searching by name.
 
-### `npm test`
+### Step 2 - Start the Backend `npm start`
+
+ - Open a new terminal in the same directory.
+ - Type: `cd server`
+ - Then run `npm start`
 
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
