@@ -2,7 +2,7 @@
 
 This project is a coding challenge made for the frontend developer position at Trascender Global.
 
-![This is an image](https://i.imgur.com/rLvzBjC.jpeg)
+![This is an image](https://i.imgur.com/ln3VXat.jpeg)
 
 
 ## How to run this app:
