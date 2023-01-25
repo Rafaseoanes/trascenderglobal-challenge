@@ -1,4 +1,4 @@
-# Trascender Global Frontend chanllenge
+# Trascender Global Frontend challenge
 
 This project is a coding challenge made for the frontend developer position at Trascender Global.
 
