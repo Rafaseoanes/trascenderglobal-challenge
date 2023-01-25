@@ -9,10 +9,11 @@ In the project directory run:
 
 ### Step 1 - Start the Fronted `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Run `npm start` in the terminal
 
-This will start the Frontend part of the app, where you will be able to find a pokémon by its name or id, the app will priorize searching by name.
+Open [http://localhost:3000](http://localhost:3000) to view the app in your browser.
+
+#### This will start the Frontend part of the app, where you will be able to find a pokémon by its name or id, the app will priorize searching by name.
 
 ### Step 2 - Start the Backend `npm start`
 
@@ -20,8 +21,8 @@ This will start the Frontend part of the app, where you will be able to find a p
  - Type: `cd server`
  - Then run `npm start`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### This will start the Backend of the app wich will post the pokemon data to the data base.
+#### If you only run the Frontend of the app you would get an error every time you search for a pokémon.
 
 ### `npm run build`
 
