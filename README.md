@@ -11,6 +11,7 @@ In the project directory run:
 
 ### Step 1 - Start the Fronted `npm start`
 
+Run `npm install` in the terminal to install dependencies
 Run `npm start` in the terminal
 
 Open [http://localhost:3000](http://localhost:3000) to view the app in your browser.
@@ -21,6 +22,7 @@ Open [http://localhost:3000](http://localhost:3000) to view the app in your brow
 
  - Open a new terminal in the same directory.
  - Type: `cd server`
+ - Run `npm install` in the terminal to install dependencies
  - Then run `npm start`
 
 #### This will start the Backend of the app wich will post the pokemon data to the data base.
