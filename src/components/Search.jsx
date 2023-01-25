@@ -16,6 +16,25 @@ function Search() {
             let pokemon = await answer.json()
             console.log(pokemon)
             setData(pokemon)
+            
+            // Call to the backend to save to DB
+            await fetch('http://localhost:3030/', {
+                method: 'POST',
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    name: pokemon.name,
+                    pokedexNumber: pokemon.id,
+                    height: pokemon.height,
+                    weight: pokemon.weight,
+                    hp: pokemon.stats[0].base_stat,
+                    attack: pokemon.stats[1].base_stat,
+                    defense: pokemon.stats[2].base_stat,
+                    image: pokemon.sprites.other['official-artwork'].front_default,
+                })
+            })
 
         } catch (error) {
             alert('Please try a different Name or Id')

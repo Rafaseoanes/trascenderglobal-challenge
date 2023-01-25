@@ -1,48 +1,48 @@
-
 .imageContainer {
-    width: 100%;
-    margin: 0 auto;
+  width: 100%;
+  margin: 0 auto;
 }
 
 img {
-    max-width: 85%;
-    object-fit: cover;
+  max-width: 85%;
+  object-fit: cover;
 }
 
 
 .parallax-effect {
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 310px;
-    height: 310px;
-    background-color: rgba(255, 255, 255, 0.8);
-    color: white;
-    border-radius: 100%;
-    transform-style: preserve-3d;
- 
-  }
-  .parallax-effect .imageContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 35px;
-    font-style: italic;
-    color: white;
-    transform: translateZ(60px);
-  }
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 310px;
+  height: 310px;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: white;
+  border-radius: 100%;
+  transform-style: preserve-3d;
 
-  .imageComponentContainer{
-    display: grid;
-    place-items: center;
 }
-.hdihd{
-    color: rgba(90, 155, 229, 0.5);
+
+.parallax-effect .imageContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+  font-style: italic;
+  color: white;
+  transform: translateZ(60px);
 }
-  
+
+.imageComponentContainer {
+  display: grid;
+  place-items: center;
+}
+
+.hdihd {
+  color: rgba(90, 155, 229, 0.5);
+}
