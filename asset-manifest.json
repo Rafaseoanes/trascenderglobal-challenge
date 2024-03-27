@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/trascenderglobal-challenge/static/css/main.e175898f.css",
-    "main.js": "/trascenderglobal-challenge/static/js/main.e4df5e86.js",
+    "main.js": "/trascenderglobal-challenge/static/js/main.98b844cd.js",
     "index.html": "/trascenderglobal-challenge/index.html",
     "main.e175898f.css.map": "/trascenderglobal-challenge/static/css/main.e175898f.css.map",
-    "main.e4df5e86.js.map": "/trascenderglobal-challenge/static/js/main.e4df5e86.js.map"
+    "main.98b844cd.js.map": "/trascenderglobal-challenge/static/js/main.98b844cd.js.map"
   },
   "entrypoints": [
     "static/css/main.e175898f.css",
-    "static/js/main.e4df5e86.js"
+    "static/js/main.98b844cd.js"
   ]
 }
