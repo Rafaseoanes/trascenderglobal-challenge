@@ -18,23 +18,23 @@ function Search() {
             setData(pokemon)
             
             // Call to the backend to save to DB
-            await fetch('http://localhost:3030/', {
-                method: 'POST',
-                headers: {
-                    'Accept': 'application/json',
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify({
-                    name: pokemon.name,
-                    pokedexNumber: pokemon.id,
-                    height: pokemon.height,
-                    weight: pokemon.weight,
-                    hp: pokemon.stats[0].base_stat,
-                    attack: pokemon.stats[1].base_stat,
-                    defense: pokemon.stats[2].base_stat,
-                    image: pokemon.sprites.other['official-artwork'].front_default,
-                })
-            })
+            // await fetch('http://localhost:3030/', {
+            //     method: 'POST',
+            //     headers: {
+            //         'Accept': 'application/json',
+            //         'Content-Type': 'application/json'
+            //     },
+            //     body: JSON.stringify({
+            //         name: pokemon.name,
+            //         pokedexNumber: pokemon.id,
+            //         height: pokemon.height,
+            //         weight: pokemon.weight,
+            //         hp: pokemon.stats[0].base_stat,
+            //         attack: pokemon.stats[1].base_stat,
+            //         defense: pokemon.stats[2].base_stat,
+            //         image: pokemon.sprites.other['official-artwork'].front_default,
+            //     })
+            // })
 
         } catch (error) {
             alert('Please try a different Name or Id')
@@ -46,6 +46,13 @@ function Search() {
         const error = {}
         if (value.pokemonName.length < 1 && !value.pokemonId) error.pokemonName = 'Please enter a Pokémon name or id!'
         return error;
+    }
+
+    // onchange
+    const inputhaschanged = (e) => {
+        const inputs = document.querySelectorAll(".formField");
+        if (e.target.name === "pokemonName") inputs[1].value = "";
+        else inputs[0].value = "";
     }
 
     //id padding
@@ -113,9 +120,9 @@ function Search() {
                     validate={validations} >
 
                     <Form className='searchForm'>
-                        <Field className='formField' name='pokemonName' type='text' pattern="^[a-zA-Z]+$" placeholder="Search by name" />
+                        <Field onKeyUp={inputhaschanged} className='formField' name='pokemonName' type='text' pattern="^[a-zA-Z]+$" placeholder="Search by name" />
                         <br />
-                        <Field className='formField' name='pokemonId' type='number' placeholder="Search by id" />
+                        <Field onKeyUp={inputhaschanged} className='formField' name='pokemonId' type='number' placeholder="Search by id" />
                         <br />
                         <button className='submitButton' type='submit' >Search</button>
 
